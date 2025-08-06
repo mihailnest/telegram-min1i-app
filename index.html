@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="screen" id="code-screen">
+            <h1>Введите код</h1>
+            <input type="text" id="code-input" maxlength="4" placeholder="1234">
+            <button id="submit-btn">Подтвердить</button>
+            <p id="error-msg"></p>
+        </div>
+        
+        <div class="screen" id="game-screen" style="display:none">
+            <div class="coins">
+                <img src="coin.png" class="coin" data-id="1">
+                <img src="coin.png" class="coin" data-id="2">
+                <img src="coin.png" class="coin" data-id="3">
+            </div>
+        </div>
+        
+        <div class="screen" id="result-screen" style="display:none">
+            <h1>Вы выиграли!</h1>
+            <p id="win-amount">1000₽</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

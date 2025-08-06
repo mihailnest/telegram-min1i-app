@@ -1,0 +1,75 @@
+body {
+    background-color: #1E2A44;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.screen {
+    padding: 20px;
+}
+
+input {
+    padding: 15px;
+    font-size: 18px;
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.coins {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.coin {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateY(0) rotate(0); }
+    25% { transform: translateY(-5px) rotate(5deg); }
+    50% { transform: translateY(0) rotate(0); }
+    75% { transform: translateY(-5px) rotate(-5deg); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+#result-screen {
+    font-size: 24px;
+}
+
+#error-msg {
+    color: #ff6b6b;
+    min-height: 20px;
+}
